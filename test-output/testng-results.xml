@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-28T13:53:44 IST" name="Default suite" finished-at="2023-04-28T13:54:35 IST" duration-ms="50574">
+    <groups>
+    </groups>
+    <test started-at="2023-04-28T13:53:44 IST" name="Default test" finished-at="2023-04-28T13:54:35 IST" duration-ms="50574">
+      <class name="Opencart_Cart.Opencart_Cart_Test">
+        <test-method is-config="true" signature="openbrowser()[pri:0, instance:Opencart_Cart.Opencart_Cart_Test@7b9a4292]" started-at="2023-04-28T13:53:45 IST" name="openbrowser" finished-at="2023-04-28T13:54:05 IST" duration-ms="20865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openbrowser -->
+        <test-method signature="addMackbook_to_cart()[pri:0, instance:Opencart_Cart.Opencart_Cart_Test@7b9a4292]" started-at="2023-04-28T13:54:05 IST" name="addMackbook_to_cart" finished-at="2023-04-28T13:54:27 IST" duration-ms="21402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addMackbook_to_cart -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:Opencart_Cart.Opencart_Cart_Test@7b9a4292]" started-at="2023-04-28T13:54:27 IST" name="closebrowser" finished-at="2023-04-28T13:54:35 IST" duration-ms="8041" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- Opencart_Cart.Opencart_Cart_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
