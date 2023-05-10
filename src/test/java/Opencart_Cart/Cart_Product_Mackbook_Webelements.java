@@ -20,8 +20,8 @@ public class Cart_Product_Mackbook_Webelements {
 	
 	
 	//constructor
-	public Cart_Product_Mackbook_Webelements(WebDriver MackBook) {
-		this.driver=MackBook; 
+	public Cart_Product_Mackbook_Webelements(WebDriver driver) {
+		this.driver=driver; 
 	}
 	
 	//Page Method

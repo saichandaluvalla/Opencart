@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Opencart_Cart.Opencart_Cart_Test">
+      <class name="Opencart_Cart.Cart_BaseTest_ExtentReports">
         <methods>
-          <include name="addMackbook_to_cart"/>
-          <include name="closebrowser"/>
-          <include name="openbrowser"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="AddMackbook_to_cart2"/>
         </methods>
-      </class> <!-- Opencart_Cart.Opencart_Cart_Test -->
+      </class> <!-- Opencart_Cart.Cart_BaseTest_ExtentReports -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -15,10 +15,14 @@ public class Cart_Product_Cartview_Webelements {
 	
 	By ErrorMessage = By.xpath("//body/div[@id='checkout-cart']/div[1]"); 
 	
+	By removeproduct = By.xpath("//tbody/tr[1]/td[4]/div[1]/span[1]/button[2]"); 
+	
+	By MessageafterRemove = By.cssSelector("body:nth-child(2) div.container:nth-child(4) div.row div.col-sm-12 > p:nth-child(2)"); 
+	
 	
 	//Construtor
-	public Cart_Product_Cartview_Webelements(WebDriver CartView) {
-		this.driver= CartView; 
+	public Cart_Product_Cartview_Webelements(WebDriver driver) {
+		this.driver= driver; 
 	}
 	
 	
@@ -47,12 +51,23 @@ public class Cart_Product_Cartview_Webelements {
 		String ActualErrorMessage =driver.findElement(ErrorMessage).getText(); 
 		String ExpectedErrorMessage = "You have entered Incorrect number"; 
 		
-   if(ActualErrorMessage == ExpectedErrorMessage ) { 
-	   System.out.println("Error Message is Correct : " +ActualErrorMessage);
-   } else {
-	   System.out.println("*****Error Message is not showing *******" );  
-   }
-	
+    Assert.assertEquals("ActualErrorMessage", "ExpectedErrorMessage");  
+    
+	} 
+	public void clickremoveproduct() {
+		driver.findElement(removeproduct).click(); 
+		
+		String ActualMessage=driver.findElement(MessageafterRemove).getText(); 
+		String ExpectedMessage="Your shopping cart is empty!"; 
+		
+		System.out.println("MessageafteRemove : " +ActualMessage);
+		if(ActualMessage == ExpectedMessage) {
+			System.out.println("Product has been removed from the cart");
+		} else {
+			System.out.println("Product has not been removed from the cart");
+			
+		}
+		
 	}
 
 	
