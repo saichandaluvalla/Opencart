@@ -5,7 +5,7 @@
 <listeners>
 <listener class-name="Opencart_Cart.Opencart_Cart_Listerners"></listener> 
 </listeners>   
-   
+    
   <test  name="Quantity Test">  
     <classes>  
             <class name = "Opencart_Cart.Cart_BaseTest_ExtentReports">    
@@ -15,6 +15,6 @@
               </methods>   
           </class>  
     </classes>    
-      </test> <!-- Test --> 
+      </test> <!-- Test -->  
      
 </suite> <!-- Suite --> 

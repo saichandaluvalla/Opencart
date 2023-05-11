@@ -5,7 +5,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -13,26 +12,27 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.ITestResult;
+import org.testng.ITestResult; 
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterMethod; 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
+ 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-
+ 
 public class Cart_BaseTest_ExtentReports {
 	static WebDriver driver; 
     ExtentReports extent;
     ExtentTest test;
-    Cart_Product_Webelements CPW;
-    Cart_Product_Mackbook_Webelements CPMW;
+    Cart_Product_Webelements CPW; 
+    Cart_Product_Mackbook_Webelements CPMW; 
     Cart_Product_Cartview_Webelements CPCW; 
+    
 
-    @BeforeClass
+    @BeforeClass 
     public void setUp() {
         // Initialize the extent report    
         extent = new ExtentReports("test-output/OpencartQuantityTestReport.html");  
@@ -48,11 +48,11 @@ public class Cart_BaseTest_ExtentReports {
    
  
         // Initialize the page objects 
-		 CPW=new Cart_Product_Webelements(driver); 
-		
-		CPMW=new Cart_Product_Mackbook_Webelements(driver);
-
-		 CPCW=new Cart_Product_Cartview_Webelements(driver); 
+        CPW=new Cart_Product_Webelements(driver);
+        
+         CPMW=new Cart_Product_Mackbook_Webelements(driver);
+        
+        CPCW=new Cart_Product_Cartview_Webelements(driver); 
 		
 
     } 
@@ -64,7 +64,7 @@ public class Cart_BaseTest_ExtentReports {
 
 		System.out.println("Opencart application has been Opened");
 		Thread.sleep(2000);  
-		
+		 
 		 
 		CPW.selectMackBook(); 
 		   
@@ -103,10 +103,10 @@ public class Cart_BaseTest_ExtentReports {
 	
     @AfterClass
     public void tearDown() throws IOException {
-    	  //Screenshot in Test Level
+    	
     	test= extent.startTest("Positive Quantity Test", "This is Quantity Test in Validy test level"); 
         extent.addSystemInfo("Host name", "Saichand Aluvala");
-        extent.addSystemInfo("Username", "Saichand A"); 
+        extent.addSystemInfo("Username", "Saichand A");
 
         
         test.log(LogStatus.INFO, "Entering Valid Quantity");
@@ -142,6 +142,7 @@ public class Cart_BaseTest_ExtentReports {
     } 
     
     
+  //Screenshot in Test Level
     
     //Screenshot for failed testcases
     public static String screenshotforFailedtestcases(String filename) {  

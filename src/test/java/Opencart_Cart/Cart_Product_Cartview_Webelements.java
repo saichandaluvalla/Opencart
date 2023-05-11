@@ -49,11 +49,11 @@ public class Cart_Product_Cartview_Webelements {
 
 	public void checkError() {
 		String ActualErrorMessage =driver.findElement(ErrorMessage).getText(); 
-		String ExpectedErrorMessage = "You have entered Incorrect number"; 
+		String ExpectedErrorMessage = driver.findElement(ErrorMessage).getText();
 		
-    Assert.assertEquals("ActualErrorMessage", "ExpectedErrorMessage");  
+    Assert.assertEquals(ActualErrorMessage, ExpectedErrorMessage);   
     
-	} 
+	}  
 	public void clickremoveproduct() {
 		driver.findElement(removeproduct).click(); 
 		

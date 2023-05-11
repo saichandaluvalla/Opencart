@@ -1,68 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-10T23:14:14 IST" name="Suite" finished-at="2023-05-10T23:15:01 IST" duration-ms="46978">
+  <suite started-at="2023-05-10T23:53:37 IST" name="Suite" finished-at="2023-05-10T23:54:24 IST" duration-ms="47146">
     <groups>
     </groups>
-    <test started-at="2023-05-10T23:14:14 IST" name="Quantity Test" finished-at="2023-05-10T23:15:01 IST" duration-ms="46978">
+    <test started-at="2023-05-10T23:53:37 IST" name="Quantity Test" finished-at="2023-05-10T23:54:24 IST" duration-ms="47146">
       <class name="Opencart_Cart.Cart_BaseTest_ExtentReports">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Opencart_Cart.Cart_BaseTest_ExtentReports@2f9f7dcf]" started-at="2023-05-10T23:14:14 IST" name="setUp" finished-at="2023-05-10T23:14:24 IST" duration-ms="9750" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Opencart_Cart.Cart_BaseTest_ExtentReports@2f9f7dcf]" started-at="2023-05-10T23:53:37 IST" name="setUp" finished-at="2023-05-10T23:53:46 IST" duration-ms="9025" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addMackbook_to_cart()[pri:1, instance:Opencart_Cart.Cart_BaseTest_ExtentReports@2f9f7dcf]" started-at="2023-05-10T23:14:24 IST" name="addMackbook_to_cart" finished-at="2023-05-10T23:14:48 IST" duration-ms="23815" status="PASS">
+        <test-method signature="addMackbook_to_cart()[pri:1, instance:Opencart_Cart.Cart_BaseTest_ExtentReports@2f9f7dcf]" started-at="2023-05-10T23:53:46 IST" name="addMackbook_to_cart" finished-at="2023-05-10T23:54:09 IST" duration-ms="22935" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addMackbook_to_cart -->
-        <test-method signature="AddMackbook_to_cart2()[pri:2, instance:Opencart_Cart.Cart_BaseTest_ExtentReports@2f9f7dcf]" started-at="2023-05-10T23:14:48 IST" name="AddMackbook_to_cart2" finished-at="2023-05-10T23:14:54 IST" duration-ms="5784" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [ExpectedErrorMessage] but found [ActualErrorMessage]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [ExpectedErrorMessage] but found [ActualErrorMessage]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at Opencart_Cart.Cart_Product_Cartview_Webelements.checkError(Cart_Product_Cartview_Webelements.java:54)
-at Opencart_Cart.Cart_BaseTest_ExtentReports.AddMackbook_to_cart2(Cart_BaseTest_ExtentReports.java:93)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="AddMackbook_to_cart2()[pri:2, instance:Opencart_Cart.Cart_BaseTest_ExtentReports@2f9f7dcf]" started-at="2023-05-10T23:54:09 IST" name="AddMackbook_to_cart2" finished-at="2023-05-10T23:54:18 IST" duration-ms="8965" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddMackbook_to_cart2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Opencart_Cart.Cart_BaseTest_ExtentReports@2f9f7dcf]" started-at="2023-05-10T23:14:54 IST" name="tearDown" finished-at="2023-05-10T23:15:01 IST" duration-ms="6763" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Opencart_Cart.Cart_BaseTest_ExtentReports@2f9f7dcf]" started-at="2023-05-10T23:54:19 IST" name="tearDown" finished-at="2023-05-10T23:54:24 IST" duration-ms="5385" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
